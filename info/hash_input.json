@@ -1,0 +1,4 @@
+{
+  "fortran_compiler": "gfortran",
+  "numpy": "1.17"
+}

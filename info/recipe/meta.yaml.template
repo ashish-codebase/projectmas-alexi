@@ -1,0 +1,74 @@
+package:
+  name: projectmas_alexi
+  version: 0.1.0
+
+source:
+  # git_url: https://github.com/bucricket/projectMAScorrection.git
+#  path: /Users/mschull/PycharmProjects/projectMASalexi
+  path: ../projectMASalexi
+  
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+build:
+  number: 0
+  script: 
+
+  entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - landsat-util = landsat-util:main
+    #
+    # Would create an entry point called landsat-util that calls landsat-util.main()
+
+    # - pyrttov=pyrttov.__init__:Rttov
+    - pyalexi=pyalexi.pyalexi:alexi
+
+#  binary_has_prefix_files:
+#    - bin/alexi_proc
+  ignore_run_exports:
+    - numpy
+    - libgfortran
+#  binary_relocation: True
+CONDA_BUILD_SYSROOT:
+  - /opt/MacOSX10.13.sdk        # [osx]
+
+requirements:
+  build:
+    - {{ compiler('fortran') }}
+    - scons
+
+  host:
+    - numpy {{ numpy }}
+    - python {{ python }}
+    - setuptools
+
+  run:
+    - python {{ python }}
+    - numpy {{ numpy }}
+
+test:
+  # Python imports
+  imports:
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+    - pyalexi
+
+  requires:
+
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: 
+  license: CCO
+  summary: 'python wrapped ALEXI'
+  license_family: BSD
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

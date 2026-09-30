@@ -1,0 +1,31 @@
+{
+  "paths": [
+    {
+      "_path": "bin/alexi_proc",
+      "path_type": "hardlink",
+      "sha256": "5a7821e9c525145bff8ffc5826b98cc594afc645211007e82d038c32d283fee1",
+      "size_in_bytes": 341712
+    },
+    {
+      "_path": "bin/pyalexi",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/usr/local/conda-bld/projectmas_alexi_1598888799047/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+      "sha256": "66ded85918c08b46048c6b23085edcc8ba53784aa016708094f732e54719c323",
+      "size_in_bytes": 470
+    },
+    {
+      "_path": "lib/python3.7/site-packages/alexi-0.1-py3.7.egg",
+      "path_type": "hardlink",
+      "sha256": "d8f5e99455c5fb4d5c77a53a0b340e1e819f4d57b61649a58910ecfa33214653",
+      "size_in_bytes": 4179
+    },
+    {
+      "_path": "lib/python3.7/site-packages/alexi.pth",
+      "path_type": "hardlink",
+      "sha256": "0af28168fb3ff94196615766a93a8a031a6a8fcf468823c5281eba60714f0657",
+      "size_in_bytes": 22
+    }
+  ],
+  "paths_version": 1
+}

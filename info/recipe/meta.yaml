@@ -1,0 +1,97 @@
+# This file created by conda-build 3.19.2
+# meta.yaml template originally from:
+# /PycharmProjects/projectMASalexi, last modified Tue May  5 18:00:34 2020
+# ------------------------------------------------
+
+package:
+    name: projectmas_alexi
+    version: 0.1.0
+source:
+    path: /PycharmProjects/projectMASalexi
+build:
+    entry_points:
+        - pyalexi=pyalexi.pyalexi:alexi
+    ignore_run_exports:
+        - libgcc-ng
+        - libgfortran
+        - numpy
+    number: '0'
+    string: py37h47cba93_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 conda_forge
+        - _openmp_mutex 4.5 1_gnu
+        - binutils_impl_linux-64 2.34 h2122c62_9
+        - binutils_linux-64 2.34 h47ac705_27
+        - ca-certificates 2020.6.20 hecda079_0
+        - certifi 2020.6.20 py38h32f6830_0
+        - gcc_impl_linux-64 9.3.0 ha2fd2e4_16
+        - gcc_linux-64 9.3.0 h44160b2_27
+        - gfortran_impl_linux-64 9.3.0 hde52e87_16
+        - gfortran_linux-64 9.3.0 ha9dd585_27
+        - kernel-headers_linux-64 2.6.32 h77966d4_13
+        - ld_impl_linux-64 2.34 hc38a660_9
+        - libffi 3.2.1 he1b5a44_1007
+        - libgcc-devel_linux-64 9.3.0 hfd08b2a_16
+        - libgcc-ng 9.3.0 h24d8f2e_16
+        - libgfortran-ng 9.3.0 hdf63c60_16
+        - libgomp 9.3.0 h24d8f2e_16
+        - libstdcxx-ng 9.3.0 hdf63c60_16
+        - ncurses 6.2 he1b5a44_1
+        - openssl 1.1.1g h516909a_1
+        - pip 20.2.2 py_0
+        - python 3.8.5 h1103e12_7_cpython
+        - python_abi 3.8 1_cp38
+        - readline 8.0 he28a2e2_2
+        - scons 4.0.1 py38h32f6830_0
+        - setuptools 49.6.0 py38h32f6830_0
+        - sqlite 3.33.0 h4cf870e_0
+        - sysroot_linux-64 2.12 h77966d4_13
+        - tk 8.6.10 hed695b0_0
+        - wheel 0.35.1 pyh9f0ad1d_0
+        - xz 5.2.5 h516909a_1
+        - zlib 1.2.11 h516909a_1009
+    host:
+        - _libgcc_mutex 0.1 conda_forge
+        - _openmp_mutex 4.5 1_llvm
+        - ca-certificates 2020.6.20 hecda079_0
+        - certifi 2020.6.20 py37hc8dfbb8_0
+        - ld_impl_linux-64 2.34 hc38a660_9
+        - libblas 3.8.0 16_mkl
+        - libcblas 3.8.0 16_mkl
+        - libffi 3.2.1 he1b5a44_1007
+        - libgcc-ng 9.3.0 h24d8f2e_16
+        - libgfortran-ng 9.3.0 hdf63c60_16
+        - liblapack 3.8.0 16_mkl
+        - libstdcxx-ng 9.3.0 hdf63c60_16
+        - llvm-openmp 10.0.1 hc9558a2_0
+        - mkl 2020.2 256
+        - ncurses 6.2 he1b5a44_1
+        - numpy 1.17.5 py37h95a1406_0
+        - openssl 1.1.1g h516909a_1
+        - pip 20.2.2 py_0
+        - python 3.7.8 h6f2ec95_1_cpython
+        - python_abi 3.7 1_cp37m
+        - readline 8.0 he28a2e2_2
+        - setuptools 49.6.0 py37hc8dfbb8_0
+        - sqlite 3.33.0 h4cf870e_0
+        - tk 8.6.10 hed695b0_0
+        - wheel 0.35.1 pyh9f0ad1d_0
+        - xz 5.2.5 h516909a_1
+        - zlib 1.2.11 h516909a_1009
+    run:
+        - libgcc-ng >=9.3.0
+        - libgfortran-ng >=9,<10.0a0
+        - numpy 1.17.*
+        - python >=3.7,<3.8.0a0
+        - python_abi 3.7.* *_cp37m
+test:
+    imports:
+        - pyalexi
+about:
+    license: CCO
+    license_family: BSD
+    summary: python wrapped ALEXI
+extra:
+    copy_test_source_files: true
+    final: true
