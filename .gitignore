@@ -1,0 +1,9 @@
+# pi agent session state
+.pi/
+
+# Generated documentation render (source of truth is readme_v2.md)
+readme_v2.html
+
+# Python bytecode
+__pycache__/
+*.pyc
