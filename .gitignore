@@ -12,3 +12,7 @@ __pycache__/
 csharp/**/bin/
 csharp/**/obj/
 csharp/.vs/
+
+# Local-only reference material (kept out of the repo)
+Geophysical Research Letters - 2017 - Hain - Estimating morning change in land surface temperature from MODIS day night (1).pdf
+_hain2017_text.txt
