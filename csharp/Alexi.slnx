@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Alexi.Cli/Alexi.Cli.csproj" />
+    <Project Path="src/Alexi.Core/Alexi.Core.csproj" />
+    <Project Path="src/Alexi.IO/Alexi.IO.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Alexi.Core.Tests/Alexi.Core.Tests.csproj" />
+    <Project Path="tests/Alexi.Golden.Tests/Alexi.Golden.Tests.csproj" />
+  </Folder>
+</Solution>

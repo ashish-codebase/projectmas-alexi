@@ -7,3 +7,8 @@ readme_v2.html
 # Python bytecode
 __pycache__/
 *.pyc
+
+# C# build artifacts
+csharp/**/bin/
+csharp/**/obj/
+csharp/.vs/
